@@ -42,6 +42,8 @@ body,
 
     .content-area {
         position: absolute;
+        box-sizing: border-box;
+        padding: 10px;
         width: 100%;
         top: 64px;
         left: 0;

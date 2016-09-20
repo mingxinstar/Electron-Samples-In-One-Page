@@ -33,7 +33,9 @@ class Base extends React.Component {
                         <div className="content-header">
                             <span>Title</span>
                         </div>
-                        <div className="content-area"></div>
+                        <div className="content-area">
+                            {this.props.children}
+                        </div>
                     </div>
                 </div>
             </MuiThemeProvider>
