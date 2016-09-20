@@ -1,0 +1,50 @@
+$blue : #00BCD4;
+
+html,
+body,
+#mainWrap {
+    padding: 0;
+    margin: 0;
+}
+
+.sideBar {
+    float: left;
+    width: 224px;
+    height: 100%;
+
+    .logo {
+        height: 64px;
+        line-height: 64px;
+        font-size: 24px;
+        color: #FFF;
+        background-color: #00BCD4;
+        text-indent: 10px;
+    }
+}
+
+.content-wrap {
+    position: relative;
+    height: 100%;
+    margin-left: 224px;
+
+    .content-header {
+        height: 64px;
+        line-height: 64px;
+        font-size: 20px;
+        color: #FFF;
+        background-color: $blue;
+        text-align: right;
+
+        span {
+            margin: 0 10px 0 0;
+        }
+    }
+
+    .content-area {
+        position: absolute;
+        width: 100%;
+        top: 64px;
+        left: 0;
+        bottom: 0;
+    }
+}
