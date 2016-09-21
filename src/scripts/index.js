@@ -7,6 +7,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import Base from 'components/Base';
 import HelloWorld from 'components/HelloWorld';
+import DesktopCapture from 'components/DesktopCapture';
 
 import 'styles/base.scss';
 
@@ -16,6 +17,7 @@ ReactDOM.render((
     <Router history={hashHistory}>
         <Route path="/" component={Base}>
             <IndexRoute component={HelloWorld} />
+            <Route path="/desktop capture" component={DesktopCapture} />
         </Route>
     </Router>
 ), document.querySelector('#mainWrap'));

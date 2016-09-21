@@ -20,6 +20,10 @@ body,
         background-color: #00BCD4;
         text-indent: 10px;
     }
+
+    .selected {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 }
 
 .content-wrap {
