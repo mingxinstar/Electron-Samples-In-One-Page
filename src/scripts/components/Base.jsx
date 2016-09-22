@@ -16,10 +16,13 @@ class Base extends React.Component {
         this.state = {};
     }
 
+    _handleItemTouchTap (event, menuItem, index) {
+        location.href = `#/${menus[index]}`
+    }
+
     render () {
         let { pathname } = this.props.location;
-        pathname = pathname.replace(/ /g, '');
-        pathname = pathname === '/' ? 'hello world' : pathname;
+        pathname = pathname.substr(1);
 
         return (
             <MuiThemeProvider>
@@ -28,9 +31,9 @@ class Base extends React.Component {
                         <div className="logo">
                             Electron Demos
                         </div>
-                        <Menu>
+                        <Menu onItemTouchTap={this._handleItemTouchTap.bind(this)}>
                             {menus.map((menuName, index) => {
-                                return <MenuItem key={index} primaryText={menuName} style={menuName === pathname ? selectedStyle : ''} />
+                                return <MenuItem key={index} primaryText={menuName} style={menuName === pathname ? selectedStyle : null} />
                             })}
                         </Menu>
                     </Paper>
