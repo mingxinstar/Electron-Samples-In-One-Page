@@ -25,6 +25,7 @@ module.exports = {
             actions : PUBLIC_DIR + '/scripts/actions',
             routes : PUBLIC_DIR + '/scripts/routes'
         }
+        // packageMains : ["webpack", "browser", "web", "browserify"]
     },
     module : {
         // preLoaders : [{

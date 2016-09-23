@@ -1,6 +1,8 @@
-'use strict';
+"use strict";
 
 import React from 'react';
+// import { desktopCapturer } from 'electron';
+const { desktopCapturer } = electronRequire('electron');
 
 class DesktopCapture extends React.Component {
     constructor (props) {

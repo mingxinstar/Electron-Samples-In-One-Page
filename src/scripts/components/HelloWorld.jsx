@@ -30,6 +30,9 @@ class HelloWorld extends React.Component {
                     <li>
                         <a href="https://github.com/electron/electron-quick-start" target="_blank">Electron Quick Start</a>
                     </li>
+                    <li>
+                        <a href="http://electron.atom.io/apps/" target="_blank">Apps use Electron</a>
+                    </li>
                 </ol>
             </div>
         )
