@@ -4,7 +4,7 @@ import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Menu, MenuItem, Paper, AppBar } from 'material-ui';
 
-const menus = ['hello world', 'desktop capture', 'extra'];
+const menus = ['hello world', 'desktop capture', 'dialog', 'extra'];
 const selectedStyle = {
     backgroundColor : "rgba(0, 0, 0, 0.2)"
 }
@@ -22,6 +22,7 @@ class Base extends React.Component {
 
     render () {
         let { pathname } = this.props.location;
+
         pathname = pathname.substr(1);
         pathname = pathname || 'hellow world';
 
@@ -42,7 +43,7 @@ class Base extends React.Component {
                     </Paper>
                     <div className="content-wrap">
                         <div className="content-header">
-                            <span>Title</span>
+                            <span>{pathname.charAt(0).toUpperCase()+pathname.substr(1)}</span>
                         </div>
                         <div className="content-area">
                             {this.props.children}
