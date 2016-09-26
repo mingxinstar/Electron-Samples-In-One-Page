@@ -2,7 +2,6 @@
   "name": "electron",
   "version": "1.0.0",
   "description": "electron samples in one page",
-  "main": "src/scripts/main.js",
   "dependencies": {
     "electron": "^1.4.0",
     "material-ui": "^0.15.4",
@@ -32,8 +31,9 @@
     "webpack": "^1.13.0"
   },
   "scripts": {
-    "start-app": "electron .",
-    "start-build": "web0pack ."
+    "start-app": "electron src/scripts/main.js",
+    "start-build": "webpack .",
+    "FIXFIX": "webpack --progress --profile --colors --display-error-details --display-cached"
   },
   "repository": {
     "type": "git",

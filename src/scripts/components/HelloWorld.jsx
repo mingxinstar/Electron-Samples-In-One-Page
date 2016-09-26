@@ -19,6 +19,7 @@ class HelloWorld extends React.Component {
                     <li>Electron</li>
                     <li>React</li>
                     <li>Material-ui</li>
+                    <li>Skeleton</li>
                     <li>Webpack</li>
                     <li>Grunt</li>
                 </ol>
@@ -32,6 +33,12 @@ class HelloWorld extends React.Component {
                     </li>
                     <li>
                         <a href="http://electron.atom.io/apps/" target="_blank">Apps use Electron</a>
+                    </li>
+                </ol>
+                <h2>Material-ui</h2>
+                <ol>
+                    <li>
+                        <a href="http://www.material-ui.com/#/" target="_blank">Material-ui Website</a>
                     </li>
                 </ol>
             </div>

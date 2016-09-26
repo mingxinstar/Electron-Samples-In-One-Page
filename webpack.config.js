@@ -1,14 +1,16 @@
+const path = require('path');
+
 const PUBLIC_DIR = __dirname + '/src'
 const ENV = process.env.NODE_ENV || 'develop';
 
-console.log('build ENV : ', ENV);
+console.log(__dirname);
 
 module.exports = {
     debug : true,
     devtool : 'eval',
     watch : true,
     entry : {
-        index : './src/scripts/index.js'
+        index : path.resolve(__dirname, 'src/scripts/index.js')
     },
     output : {
         path : __dirname + '/dist/assets',
@@ -49,7 +51,6 @@ module.exports = {
         }, {
             test : /\.eot|woff|woff2|ttf|svg$/,
             loader : 'file-loader',
-            // loader : 'url-loader!file-loader',
             exclude : '/node_modules/'
         }, {
             test : /\.jpg|png$/,

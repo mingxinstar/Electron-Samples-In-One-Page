@@ -9,6 +9,8 @@ import Base from 'components/Base';
 import HelloWorld from 'components/HelloWorld';
 import DesktopCapture from 'components/DesktopCapture';
 
+import 'styles/normalize.css';
+import 'styles/skeleton.css';
 import 'styles/base.scss';
 
 injectTapEventPlugin();

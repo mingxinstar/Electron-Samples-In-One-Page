@@ -7,6 +7,22 @@ body,
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+    background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4DD0E1;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+    background: yellow;
+}
+
 .sideBar {
     float: left;
     width: 224px;
@@ -47,10 +63,11 @@ body,
     .content-area {
         position: absolute;
         box-sizing: border-box;
-        padding: 10px;
+        padding: 20px;
         width: 100%;
         top: 64px;
         left: 0;
         bottom: 0;
+        overflow-y: scroll;
     }
 }
