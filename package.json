@@ -32,8 +32,7 @@
   },
   "scripts": {
     "start-app": "electron src/scripts/main.js",
-    "start-build": "webpack .",
-    "FIXFIX": "webpack --progress --profile --colors --display-error-details --display-cached"
+    "start-webpack": "webpack --progress --profile --colors --display-error-details --display-cached"
   },
   "repository": {
     "type": "git",

@@ -18,6 +18,7 @@ injectTapEventPlugin();
 ReactDOM.render((
     <Router history={hashHistory}>
         <Route path="/" component={Base}>
+            <IndexRoute component={HelloWorld} />
             <Route path="hello world" component={HelloWorld} />
             <Route path="desktop capture" component={DesktopCapture} />
         </Route>

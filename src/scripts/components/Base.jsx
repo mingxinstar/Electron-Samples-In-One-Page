@@ -23,6 +23,7 @@ class Base extends React.Component {
     render () {
         let { pathname } = this.props.location;
         pathname = pathname.substr(1);
+        pathname = pathname || 'hellow world';
 
         return (
             <MuiThemeProvider>
