@@ -8,6 +8,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import Base from 'components/Base';
 import HelloWorld from 'components/HelloWorld';
 import DesktopCapture from 'components/DesktopCapture';
+import Extra from 'components/Extra';
 
 import 'styles/normalize.css';
 import 'styles/skeleton.css';
@@ -21,6 +22,7 @@ ReactDOM.render((
             <IndexRoute component={HelloWorld} />
             <Route path="hello world" component={HelloWorld} />
             <Route path="desktop capture" component={DesktopCapture} />
+            <Route path="extra" component={Extra} />
         </Route>
     </Router>
 ), document.querySelector('#mainWrap'));

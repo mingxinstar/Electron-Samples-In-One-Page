@@ -4,7 +4,7 @@ import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Menu, MenuItem, Paper, AppBar } from 'material-ui';
 
-const menus = ['hello world', 'desktop capture', 'file explorer'];
+const menus = ['hello world', 'desktop capture', 'extra'];
 const selectedStyle = {
     backgroundColor : "rgba(0, 0, 0, 0.2)"
 }
@@ -34,7 +34,9 @@ class Base extends React.Component {
                         </div>
                         <Menu onItemTouchTap={this._handleItemTouchTap.bind(this)}>
                             {menus.map((menuName, index) => {
-                                return <MenuItem key={index} primaryText={menuName} style={menuName === pathname ? selectedStyle : null} />
+                                return <MenuItem key={index}
+                                                 primaryText={menuName.charAt(0).toUpperCase()+menuName.substr(1)}
+                                                 style={menuName === pathname ? selectedStyle : null} />
                             })}
                         </Menu>
                     </Paper>
