@@ -11,6 +11,7 @@ import DesktopCapture from 'components/DesktopCapture';
 import Extra from 'components/Extra';
 import Dialog from 'components/Dialog';
 import Menu from 'components/Menu';
+import Tray from 'components/Tray';
 
 import 'styles/normalize.css';
 import 'styles/skeleton.css';
@@ -24,9 +25,10 @@ ReactDOM.render((
             <IndexRoute component={HelloWorld} />
             <Route path="hello world" component={HelloWorld} />
             <Route path="desktop capture" component={DesktopCapture} />
-            <Route path="extra" component={Extra} />
             <Route path="dialog" component={Dialog} />
             <Route path="menu" component={Menu} />
+            <Route path="tray" component={Tray} />
+            <Route path="extra" component={Extra} />
         </Route>
     </Router>
 ), document.querySelector('#mainWrap'));
