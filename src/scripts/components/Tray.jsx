@@ -44,6 +44,8 @@ class Tray extends React.Component {
                 <pre>
                     <code>{this._renderCode()}</code>
                 </pre>
+                <h4>Demo:</h4>
+                <p><strong>Please check the notification area of Windows.</strong></p>
             </div>
         )
     }

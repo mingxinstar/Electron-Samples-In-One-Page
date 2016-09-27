@@ -12,6 +12,7 @@ import Extra from 'components/Extra';
 import Dialog from 'components/Dialog';
 import Menu from 'components/Menu';
 import Tray from 'components/Tray';
+import Webview from 'components/Webview';
 
 import 'styles/normalize.css';
 import 'styles/skeleton.css';
@@ -29,6 +30,7 @@ ReactDOM.render((
             <Route path="menu" component={Menu} />
             <Route path="tray" component={Tray} />
             <Route path="extra" component={Extra} />
+            <Route path="webview" component={Webview} />
         </Route>
     </Router>
 ), document.querySelector('#mainWrap'));
