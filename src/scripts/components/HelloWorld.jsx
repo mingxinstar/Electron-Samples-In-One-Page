@@ -35,6 +35,11 @@ class HelloWorld extends React.Component {
                         <a href="http://electron.atom.io/apps/" target="_blank">Apps use Electron</a>
                     </li>
                 </ol>
+                <h4>Basic Concept:</h4>
+                <ul>
+                    <li>Main Process</li>
+                    <li>Render Process</li>
+                </ul>
                 <h2>Material-ui</h2>
                 <ol>
                     <li>
