@@ -10,6 +10,7 @@ import HelloWorld from 'components/HelloWorld';
 import DesktopCapture from 'components/DesktopCapture';
 import Extra from 'components/Extra';
 import Dialog from 'components/Dialog';
+import Menu from 'components/Menu';
 
 import 'styles/normalize.css';
 import 'styles/skeleton.css';
@@ -25,6 +26,7 @@ ReactDOM.render((
             <Route path="desktop capture" component={DesktopCapture} />
             <Route path="extra" component={Extra} />
             <Route path="dialog" component={Dialog} />
+            <Route path="menu" component={Menu} />
         </Route>
     </Router>
 ), document.querySelector('#mainWrap'));
