@@ -25,6 +25,15 @@ class Dialog extends React.Component {
         })
     }
 
+    _showMessageBox (type) {
+        dialog.showMessageBox({
+            type : type,
+            title : type,
+            message : type,
+            buttons : ['confirm']
+        });
+    }
+
     render () {
         return (
             <div>
@@ -41,16 +50,16 @@ class Dialog extends React.Component {
                 <br />
                 <br />
                 <div>
-                    <RaisedButton label="Open Dialog"
+                    <RaisedButton label="Open Info Dialog"
                                   primary={true}
-                                  onClick={this._showOpenDialog.bind(this)}
+                                  onClick={this._showMessageBox.bind(this, "info")}
                                   style={msgBoxBtnStyle} />
-                    <RaisedButton label="Open Dialog"
+                    <RaisedButton label="Open Error Dialog"
                                   secondary={true}
-                                  onClick={this._showOpenDialog.bind(this)}
+                                  onClick={this._showMessageBox.bind(this, "error")}
                                   style={msgBoxBtnStyle} />
-                    <RaisedButton label="Open Dialog"
-                                  onClick={this._showOpenDialog.bind(this)}
+                    <RaisedButton label="Open Question Dialog"
+                                  onClick={this._showMessageBox.bind(this, "question")}
                                   style={msgBoxBtnStyle} />
                 </div>
             </div>
